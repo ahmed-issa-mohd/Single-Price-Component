@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+.monthly-subscription-container {
+  background: var(--lightseagreen);
+}
+.why-us-container {
+  background: var(--lightergreen);
+}
+
+:root {
+  --white: #ffffff;
+  --lightgreen: #c0df34;
+  --lightseagreen: #2ab2af;
+  --lightergreen: #4abebd;
+  --lightblue: #e6eff6;
+  --purplishgrey: #98a6bd;
+  --boxshadow: rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--lightblue);
+
+  font-family: 'Karla';
+  font-size: 16px;
+  display: flex;
+}
+
+.card-container {
+  margin: 100px 20px;
+  max-width: 100%;
+  background: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 10px 10px var(--purplishgrey);
+}
+
+.top-container,
+.bottom-container {
+  margin-top: 30px;
+}
+
+.top-container,
+.monthly-subscription-container,
+.why-us-container {
+  padding: 0 25px;
+}
+.monthly-subscription-container,
+.why-us-container {
+  padding: 25px;
+  color: var(--white);
+}
+
+.top-container h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--lightergreen);
+  padding-bottom: 20px;
+}
+
+.top-container h2 {
+  font-size: 15px;
+  padding-bottom: 20px;
+  line-height: 20px;
+  color: #c0df34;
+  font-weight: bold;
+}
+
+.top-container p {
+  color: #98a6bd;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+/* bottom-container */
+
+.bottom-container h1 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.mount-container {
+  display: flex;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.mount-container .amount {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mount-container .month {
+  margin-left: 15px;
+  color: #e6eff687;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.mount-container .desc {
+  font-size: 15px;
+  font-weight: 400;
+  color: #98a6bd;
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  background: #c0df34;
+  text-align: center;
+  display: block;
+  margin-top: 30px;
+  padding: 15px 0;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px var(--boxshadow);
+}
+
+.why-us-container p {
+  color: #e6eff6b5;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  max-width: 200px;
+}
+
+@media screen and (min-width: 750px) {
+  .card-container {
+    margin: auto;
+    margin-top: 100px;
+    max-width: 630px;
+  }
+  .bottom-container {
+    display: flex;
+  }
+  .bottom-container > div {
+    flex-grow: 1;
+  }
+}
